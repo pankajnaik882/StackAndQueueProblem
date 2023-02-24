@@ -13,6 +13,7 @@ namespace StackAndQueue
         {
             Node node = new Node(data);
 
+
             if (this.head == null)
             {
                 //node means address.
@@ -27,7 +28,7 @@ namespace StackAndQueue
                 }
                 temp.next = node;
             }
-            Console.Write("{0} ", node.data);
+            Console.WriteLine("{0} ", node.data);
         }
         public void display()
         {
@@ -39,7 +40,7 @@ namespace StackAndQueue
             }
             while (temp != null)
             {
-                Console.Write(temp.data + " ");
+                Console.WriteLine(temp.data + " ");
                 temp = temp.next;
             }
         }
