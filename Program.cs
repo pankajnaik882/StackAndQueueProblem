@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 
 namespace StackAndQueue
 {
@@ -6,18 +7,19 @@ namespace StackAndQueue
     {
         public static void Main(string[] args)
         {
-            //Console.WriteLine("");
             LinkedList list= new LinkedList();
-            Stack stack = new Stack();
-            stack.Push(70);
-            stack.Push(30); 
-            stack.Push(56);
+            Queue q1 = new Queue();
+            q1.Enqueue(56);
+            q1.Enqueue(30);
+            q1.Enqueue(70);
 
-            foreach(int i in stack)
+            foreach (int i in q1)
             {
                 list.Add(i);
             }
-            Console.WriteLine("\nTop of stack : {0}",stack.Peek());
+            Console.WriteLine("\nTop of the stack : {0}",q1.Peek());
+            Console.WriteLine("************************");
         }
+
     }
 }
