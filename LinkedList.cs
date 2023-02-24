@@ -11,6 +11,7 @@ namespace StackAndQueue
         public Node head;
         public void Add(int data)
         {
+
             Node node = new Node(data);
 
             if (this.head == null)
